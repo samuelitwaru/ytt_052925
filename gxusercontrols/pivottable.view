@@ -6,7 +6,7 @@
 		position: sticky;
 		right: 0;
 		background-color: white; /* Adjust as needed */
-		z-index: 2;
+		/* z-index: 2; */
 		min-width:60px;
 	}
 	td:nth-last-child(1), th:nth-last-child(1) {
@@ -24,7 +24,7 @@
 
 <div id="print" style="overflow:scroll; scrollbar-width:none; border: 1px solid #dddddd; margin-right:-3px;">
 	<table class="my-sticky-column-table">
-		<thead  style="position:sticky; top:0; z-index:10">
+		<thead  style="position:sticky; top:0; z-index:0">
 			<tr>
 				<th class='text-center' style="position:sticky;left:0; background:white;">Projects per employee:</th>
 				{{#SDTProjects}}

@@ -4,25 +4,26 @@
 		padding: 5px; 
 		background:#f5f5f5;
 	}
-	td:nth-last-child(1), th:nth-last-child(1),
-	td:nth-last-child(2), th:nth-last-child(2),
-	td:nth-last-child(3), th:nth-last-child(3) {
+	
+	td.freeze, th.freeze {
 		position: sticky;
 		right: 0;
-		background-color: white; /* Adjust as needed */
+		background-color: white; 
 		z-index: 2;
 		min-width:80px;
 	}
-	td:nth-last-child(1), th:nth-last-child(1) {
-		right: 0px; /* Adjust width according to column width */
+	
+	td.freeze-1, th.freeze-1 {
+		right: 0px;
 		margin-right:10px;
 	}
-	td:nth-last-child(2), th:nth-last-child(2) {
-		right: 80px; /* Adjust width according to column width */
+	
+	td.freeze-2, th.freeze-2 {
+		right: 80px;
 	}
 	
-	td:nth-last-child(3), th:nth-last-child(3) {
-		right: 160px; /* Adjust width according to column width */
+	td.freeze-3, th.freeze-3 {
+		right: 160px; 
 	}
 </style>
 
@@ -36,9 +37,9 @@
 			<tr>
 				<th id='firstHeaderData' class='text-center' style="position:sticky;left:0; background:white;">Projects per employee:</th>
 				<!-- Project Header Cells Go Here -->
-				<th style="background:#f5f5f5;" class="work text-center">Total Work Hours</th>
-				<th style="padding:5px; background:#f5f5f5;" class="leave text-center">Total Leave Hours</th>
-				<th style="padding:5px; background:#f5f5f5;" class="leave text-center">Total</th>
+				<th style="background:#f5f5f5;" class="freeze freeze-3 work text-center">Total Work Hours</th>
+				<th style="padding:5px; background:#f5f5f5;" class="freeze freeze-2 leave text-center">Total Leave Hours</th>
+				<th style="padding:5px; background:#f5f5f5;" class="freeze freeze-1 leave text-center">Total</th>
 			</tr>
 		</thead>
 		
@@ -49,9 +50,9 @@
 				
 				<!-- Project Column Cells Go Here -->
 				
-				<td class="work text-center" style="font-weight: bold;background:#f5f5f5;">{{gxTpr_FormattedWorkHours}}{{FormattedWorkHours}}</td>
-				<td class="leave text-center" style="font-weight: bold; background:#f5f5f5;">{{gxTpr_FormattedLeaveHours}}{{FormattedLeaveHours}}</td>
-				<td class='leave' style="font-weight: bold; background:#f5f5f5;">{{gxTpr_FormattedEmployeeHours}}{{FormattedEmployeeHours}}</td>
+				<td class="freeze freeze-3 work text-center" style="font-weight: bold;background:#f5f5f5;">{{gxTpr_FormattedWorkHours}}{{FormattedWorkHours}}</td>
+				<td class="freeze freeze-2 leave text-center" style="font-weight: bold; background:#f5f5f5;">{{gxTpr_FormattedLeaveHours}}{{FormattedLeaveHours}}</td>
+				<td class="freeze freeze-1 leave" style="font-weight: bold; background:#f5f5f5;">{{gxTpr_FormattedEmployeeHours}}{{FormattedEmployeeHours}}</td>
 				
 			</tr>
 			{{/SDT_EmployeeProjectMatrixCollection}}
@@ -62,9 +63,9 @@
 			<tr class="GridWithPaginationBar GridNoBorder WorkWithOdd">
 				<td id='project-footer' class="text-center" style="font-weight: bold;background:#fff; position:sticky; left:0; z-index:1">Total</td>
 				<!-- Project Footer Cells Go Here -->
-				<td id='totalWorkHours' class="work text-center" style="bold;background:#f5f5f5;"></td>
-				<td class="leave text-center project-header" style="bold;background:#f5f5f5;"></td>
-				<td class="leave text-center project-header" style="bold;background:#f5f5f5;">{{gxTpr_FormattedOverallTotalHours}}{{FormattedOverallTotalHours}}</td>
+				<td id='totalWorkHours' class="freeze freeze-3 work text-center" style="bold;background:#f5f5f5;"></td>
+				<td class="freeze freeze-2 leave text-center project-header" style="bold;background:#f5f5f5;"></td>
+				<td class="freeze freeze-1 leave text-center project-header" style="bold;background:#f5f5f5;">{{gxTpr_FormattedOverallTotalHours}}{{FormattedOverallTotalHours}}</td>
 			</tr>
 		<tfoot>		
 	</table>
