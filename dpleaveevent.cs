@@ -136,7 +136,7 @@ namespace GeneXus.Programs {
             A112EmployeeIsActive = P00172_A112EmployeeIsActive[0];
             Gxm1sdtleaveevent = new SdtSDTLeaveEvent(context);
             Gxm2rootcol.Add(Gxm1sdtleaveevent, 0);
-            Gxm1sdtleaveevent.gxTpr_Id = A127LeaveRequestId;
+            Gxm1sdtleaveevent.gxTpr_Id = StringUtil.Str( (decimal)(A127LeaveRequestId), 10, 0);
             Gxm1sdtleaveevent.gxTpr_Content = "";
             GXt_char1 = "";
             new formatdatetime(context ).execute(  A129LeaveRequestStartDate,  "YYYY-MM-DD", out  GXt_char1) ;

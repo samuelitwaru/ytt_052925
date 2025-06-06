@@ -1,6 +1,6 @@
 /*
-				   File: type_SdtSDTLeaveEvent
-			Description: SDTLeaveEvent
+				   File: type_SdtSDT_HolidayEvent
+			Description: SDT_HolidayEvent
 				 Author: Nemo 🐠 for C# (.NET) version 18.0.10.184260
 		   Program type: Callable routine
 			  Main DBMS: 
@@ -22,31 +22,31 @@ using System.Runtime.Serialization;
 
 namespace GeneXus.Programs
 {
-	[XmlRoot(ElementName="SDTLeaveEvent")]
-	[XmlType(TypeName="SDTLeaveEvent" , Namespace="YTT_version4" )]
+	[XmlRoot(ElementName="SDT_HolidayEvent")]
+	[XmlType(TypeName="SDT_HolidayEvent" , Namespace="YTT_version4" )]
 	[Serializable]
-	public class SdtSDTLeaveEvent : GxUserType
+	public class SdtSDT_HolidayEvent : GxUserType
 	{
-		public SdtSDTLeaveEvent( )
+		public SdtSDT_HolidayEvent( )
 		{
 			/* Constructor for serialization */
-			gxTv_SdtSDTLeaveEvent_Id = "";
+			gxTv_SdtSDT_HolidayEvent_Id = "";
 
-			gxTv_SdtSDTLeaveEvent_Content = "";
+			gxTv_SdtSDT_HolidayEvent_Content = "";
 
-			gxTv_SdtSDTLeaveEvent_Start = "";
+			gxTv_SdtSDT_HolidayEvent_Start = "";
 
-			gxTv_SdtSDTLeaveEvent_End = "";
+			gxTv_SdtSDT_HolidayEvent_End = "";
 
-			gxTv_SdtSDTLeaveEvent_Classname = "";
+			gxTv_SdtSDT_HolidayEvent_Classname = "";
 
-			gxTv_SdtSDTLeaveEvent_Color = "";
+			gxTv_SdtSDT_HolidayEvent_Color = "";
 
-			gxTv_SdtSDTLeaveEvent_Type = "";
+			gxTv_SdtSDT_HolidayEvent_Type = "";
 
 		}
 
-		public SdtSDTLeaveEvent(IGxContext context)
+		public SdtSDT_HolidayEvent(IGxContext context)
 		{
 			this.context = context;	
 			initialize();
@@ -83,9 +83,6 @@ namespace GeneXus.Programs
 			AddObjectProperty("end", gxTpr_End, false);
 
 
-			AddObjectProperty("group", gxTpr_Group, false);
-
-
 			AddObjectProperty("className", gxTpr_Classname, false);
 
 
@@ -105,10 +102,10 @@ namespace GeneXus.Programs
 		public string gxTpr_Id
 		{
 			get {
-				return gxTv_SdtSDTLeaveEvent_Id; 
+				return gxTv_SdtSDT_HolidayEvent_Id; 
 			}
 			set {
-				gxTv_SdtSDTLeaveEvent_Id = value;
+				gxTv_SdtSDT_HolidayEvent_Id = value;
 				SetDirty("Id");
 			}
 		}
@@ -121,10 +118,10 @@ namespace GeneXus.Programs
 		public string gxTpr_Content
 		{
 			get {
-				return gxTv_SdtSDTLeaveEvent_Content; 
+				return gxTv_SdtSDT_HolidayEvent_Content; 
 			}
 			set {
-				gxTv_SdtSDTLeaveEvent_Content = value;
+				gxTv_SdtSDT_HolidayEvent_Content = value;
 				SetDirty("Content");
 			}
 		}
@@ -137,10 +134,10 @@ namespace GeneXus.Programs
 		public string gxTpr_Start
 		{
 			get {
-				return gxTv_SdtSDTLeaveEvent_Start; 
+				return gxTv_SdtSDT_HolidayEvent_Start; 
 			}
 			set {
-				gxTv_SdtSDTLeaveEvent_Start = value;
+				gxTv_SdtSDT_HolidayEvent_Start = value;
 				SetDirty("Start");
 			}
 		}
@@ -153,27 +150,11 @@ namespace GeneXus.Programs
 		public string gxTpr_End
 		{
 			get {
-				return gxTv_SdtSDTLeaveEvent_End; 
+				return gxTv_SdtSDT_HolidayEvent_End; 
 			}
 			set {
-				gxTv_SdtSDTLeaveEvent_End = value;
+				gxTv_SdtSDT_HolidayEvent_End = value;
 				SetDirty("End");
-			}
-		}
-
-
-
-
-		[SoapElement(ElementName="group")]
-		[XmlElement(ElementName="group")]
-		public short gxTpr_Group
-		{
-			get {
-				return gxTv_SdtSDTLeaveEvent_Group; 
-			}
-			set {
-				gxTv_SdtSDTLeaveEvent_Group = value;
-				SetDirty("Group");
 			}
 		}
 
@@ -185,10 +166,10 @@ namespace GeneXus.Programs
 		public string gxTpr_Classname
 		{
 			get {
-				return gxTv_SdtSDTLeaveEvent_Classname; 
+				return gxTv_SdtSDT_HolidayEvent_Classname; 
 			}
 			set {
-				gxTv_SdtSDTLeaveEvent_Classname = value;
+				gxTv_SdtSDT_HolidayEvent_Classname = value;
 				SetDirty("Classname");
 			}
 		}
@@ -201,10 +182,10 @@ namespace GeneXus.Programs
 		public string gxTpr_Color
 		{
 			get {
-				return gxTv_SdtSDTLeaveEvent_Color; 
+				return gxTv_SdtSDT_HolidayEvent_Color; 
 			}
 			set {
-				gxTv_SdtSDTLeaveEvent_Color = value;
+				gxTv_SdtSDT_HolidayEvent_Color = value;
 				SetDirty("Color");
 			}
 		}
@@ -217,10 +198,10 @@ namespace GeneXus.Programs
 		public string gxTpr_Type
 		{
 			get {
-				return gxTv_SdtSDTLeaveEvent_Type; 
+				return gxTv_SdtSDT_HolidayEvent_Type; 
 			}
 			set {
-				gxTv_SdtSDTLeaveEvent_Type = value;
+				gxTv_SdtSDT_HolidayEvent_Type = value;
 				SetDirty("Type");
 			}
 		}
@@ -248,14 +229,13 @@ namespace GeneXus.Programs
 
 		public void initialize( )
 		{
-			gxTv_SdtSDTLeaveEvent_Id = "";
-			gxTv_SdtSDTLeaveEvent_Content = "";
-			gxTv_SdtSDTLeaveEvent_Start = "";
-			gxTv_SdtSDTLeaveEvent_End = "";
-
-			gxTv_SdtSDTLeaveEvent_Classname = "";
-			gxTv_SdtSDTLeaveEvent_Color = "";
-			gxTv_SdtSDTLeaveEvent_Type = "";
+			gxTv_SdtSDT_HolidayEvent_Id = "";
+			gxTv_SdtSDT_HolidayEvent_Content = "";
+			gxTv_SdtSDT_HolidayEvent_Start = "";
+			gxTv_SdtSDT_HolidayEvent_End = "";
+			gxTv_SdtSDT_HolidayEvent_Classname = "";
+			gxTv_SdtSDT_HolidayEvent_Color = "";
+			gxTv_SdtSDT_HolidayEvent_Type = "";
 			return  ;
 		}
 
@@ -265,28 +245,25 @@ namespace GeneXus.Programs
 
 		#region Declaration
 
-		protected string gxTv_SdtSDTLeaveEvent_Id;
+		protected string gxTv_SdtSDT_HolidayEvent_Id;
 		 
 
-		protected string gxTv_SdtSDTLeaveEvent_Content;
+		protected string gxTv_SdtSDT_HolidayEvent_Content;
 		 
 
-		protected string gxTv_SdtSDTLeaveEvent_Start;
+		protected string gxTv_SdtSDT_HolidayEvent_Start;
 		 
 
-		protected string gxTv_SdtSDTLeaveEvent_End;
+		protected string gxTv_SdtSDT_HolidayEvent_End;
 		 
 
-		protected short gxTv_SdtSDTLeaveEvent_Group;
+		protected string gxTv_SdtSDT_HolidayEvent_Classname;
 		 
 
-		protected string gxTv_SdtSDTLeaveEvent_Classname;
+		protected string gxTv_SdtSDT_HolidayEvent_Color;
 		 
 
-		protected string gxTv_SdtSDTLeaveEvent_Color;
-		 
-
-		protected string gxTv_SdtSDTLeaveEvent_Type;
+		protected string gxTv_SdtSDT_HolidayEvent_Type;
 		 
 
 
@@ -294,14 +271,14 @@ namespace GeneXus.Programs
 	}
 	#region Rest interface
 	[GxJsonSerialization("default")]
-	[DataContract(Name=@"SDTLeaveEvent", Namespace="YTT_version4")]
-	public class SdtSDTLeaveEvent_RESTInterface : GxGenericCollectionItem<SdtSDTLeaveEvent>, System.Web.SessionState.IRequiresSessionState
+	[DataContract(Name=@"SDT_HolidayEvent", Namespace="YTT_version4")]
+	public class SdtSDT_HolidayEvent_RESTInterface : GxGenericCollectionItem<SdtSDT_HolidayEvent>, System.Web.SessionState.IRequiresSessionState
 	{
-		public SdtSDTLeaveEvent_RESTInterface( ) : base()
+		public SdtSDT_HolidayEvent_RESTInterface( ) : base()
 		{	
 		}
 
-		public SdtSDTLeaveEvent_RESTInterface( SdtSDTLeaveEvent psdt ) : base(psdt)
+		public SdtSDT_HolidayEvent_RESTInterface( SdtSDT_HolidayEvent psdt ) : base(psdt)
 		{	
 		}
 
@@ -354,19 +331,7 @@ namespace GeneXus.Programs
 			}
 		}
 
-		[DataMember(Name="group", Order=4)]
-		public short gxTpr_Group
-		{
-			get { 
-				return sdt.gxTpr_Group;
-
-			}
-			set { 
-				sdt.gxTpr_Group = value;
-			}
-		}
-
-		[DataMember(Name="className", Order=5)]
+		[DataMember(Name="className", Order=4)]
 		public  string gxTpr_Classname
 		{
 			get { 
@@ -378,7 +343,7 @@ namespace GeneXus.Programs
 			}
 		}
 
-		[DataMember(Name="color", Order=6)]
+		[DataMember(Name="color", Order=5)]
 		public  string gxTpr_Color
 		{
 			get { 
@@ -390,7 +355,7 @@ namespace GeneXus.Programs
 			}
 		}
 
-		[DataMember(Name="type", Order=7)]
+		[DataMember(Name="type", Order=6)]
 		public  string gxTpr_Type
 		{
 			get { 
@@ -405,10 +370,10 @@ namespace GeneXus.Programs
 
 		#endregion
 
-		public SdtSDTLeaveEvent sdt
+		public SdtSDT_HolidayEvent sdt
 		{
 			get { 
-				return (SdtSDTLeaveEvent)Sdt;
+				return (SdtSDT_HolidayEvent)Sdt;
 			}
 			set { 
 				Sdt = value;
@@ -420,7 +385,7 @@ namespace GeneXus.Programs
 		{
 			if ( sdt == null )
 			{
-				sdt = new SdtSDTLeaveEvent() ;
+				sdt = new SdtSDT_HolidayEvent() ;
 			}
 		}
 	}

@@ -35,7 +35,6 @@ type_SdtCompany.cs
 type_SdtProject.cs
 type_SdtLeaveType.cs
 type_SdtWorkHourLog.cs
-type_SdtLeaveRequest.cs
 type_SdtCompanyLocation.cs
 wwpbaseobjects\mail\type_SdtWWP_MailTemplate.cs
 wwpbaseobjects\notifications\web\type_SdtWWP_WebClient.cs
@@ -48,6 +47,7 @@ wwpbaseobjects\notifications\common\type_SdtWWP_Notification.cs
 type_SdtEmployee.cs
 type_SdtEmployee_Project.cs
 type_SdtEmployee_VacationSet.cs
+type_SdtLeaveRequest.cs
 gxdomainwwpdomains.cs
 genexusreporting\gxdomainqueryviewervisible.cs
 gxdomainhomesampledatastatus.cs

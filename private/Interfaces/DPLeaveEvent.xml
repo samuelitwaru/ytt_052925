@@ -64,15 +64,11 @@
             <Properties>
               <Property>
                 <Name>Type</Name>
-                <Value>Numeric</Value>
+                <Value>VarChar</Value>
               </Property>
               <Property>
                 <Name>Length</Name>
-                <Value>10</Value>
-              </Property>
-              <Property>
-                <Name>Picture</Name>
-                <Value>ZZZZZZZZZ9</Value>
+                <Value>40</Value>
               </Property>
             </Properties>
           </Field>
@@ -149,6 +145,18 @@
               <Property>
                 <Name>Length</Name>
                 <Value>20</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="type" description="type">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>40</Value>
               </Property>
             </Properties>
           </Field>

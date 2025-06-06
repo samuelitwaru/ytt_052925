@@ -74,6 +74,7 @@
  	<Compile Include="$(WebDirectory)\type_SdtSDT_EmployeeProjectMatrix.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDT_EmployeeProjectMatrix_ProjectsItem.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDT_ErrorResponse.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDT_HolidayEvent.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDT_Project.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDT_QueryViewerElements_Element.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDT_QueryViewerElements_Element_Filter.cs" />

@@ -1659,7 +1659,7 @@ namespace GeneXus.Programs {
             AV57Error = ((GeneXus.Programs.genexussecurity.SdtGAMError)AV58Errors.Item(AV77GXV6));
             if ( AV57Error.gxTpr_Code != 13 )
             {
-               GX_msglist.addItem(StringUtil.Format( "%1 (GAM%2)", AV57Error.gxTpr_Message, StringUtil.LTrimStr( (decimal)(AV57Error.gxTpr_Code), 12, 0), "", "", "", "", "", "", ""));
+               GX_msglist.addItem(new WorkWithPlus.workwithplus_web.dvmessagegetbasicnotificationmsg(context).executeUdp(  "Error!",  AV57Error.gxTpr_Message,  "error",  "#"+edtavUserpassword_Internalname,  "true",  ""));
             }
             AV77GXV6 = (int)(AV77GXV6+1);
          }
@@ -1732,7 +1732,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20255244553217", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2025669531671", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1748,7 +1748,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("gamexamplelogin.js", "?20255244553223", false, true);
+         context.AddJavascriptSource("gamexamplelogin.js", "?2025669531674", false, true);
          context.AddJavascriptSource("DVelop/Shared/WorkWithPlusCommon.js", "", false, true);
          context.AddJavascriptSource("DVelop/Mask/jquery.mask.js", "", false, true);
          context.AddJavascriptSource("DVelop/WorkWithPlusUtilities/BootstrapSelect.js", "", false, true);
